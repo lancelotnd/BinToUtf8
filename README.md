@@ -10,6 +10,6 @@ How to use:
 ```
 $ python bintoutf.py
 Usage:
-	python utf8.py -e <input> <output> Encodes a file
-	python utf8.py -d <input> <output> Decodes a file
+	python bintoutf.py -e <input> <output> Encodes a file
+	python bintoutf.py -d <input> <output> Decodes a file
 ```

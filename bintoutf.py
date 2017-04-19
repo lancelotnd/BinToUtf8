@@ -124,8 +124,8 @@ def BCLCharCodeToByte(CharCodeVal):
 
 def usage():
 	print "Usage:"
-	print "	python utf8.py -e <input> <output> Encodes a file"
-	print "	python utf8.py -d <input> <output> Decodes a file"
+	print "	python bintoutf.py -e <input> <output> Encodes a file"
+	print "	python bintoutf.py -d <input> <output> Decodes a file"
 
 if len(sys.argv) <= 3:
 	usage()
