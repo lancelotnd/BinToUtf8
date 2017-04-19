@@ -1,2 +1,17 @@
 # BinToUtf8
-A simple python program that converts a binary file into a utf8 representation
+## The code is quite messy you have been warned
+A simple python program that converts a binary file into a utf8 representation for use with neural network such as torch-rnn or char-rnn
+
+Its just a simple python version of http://robbi-985.homeip.net/information/bintoutf8_pseudo.txt
+
+From https://www.youtube.com/watch?v=FsVSZpoUdSU
+
+Tested on linux only don't know if works on windows
+
+How to use:
+```
+$ python bintoutf.py
+Usage:
+	python utf8.py -e <input> <output> Encodes a file
+	python utf8.py -d <input> <output> Decodes a file
+```
