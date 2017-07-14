@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 # A simple python version of http://robbi-985.homeip.net/information/bintoutf8_pseudo.txt
+# Todo :
+# 	Precompute a table and use it everywere
 import os,codecs,unicodedata,sys
 import cPickle as pickle
 err = 0
@@ -124,12 +126,12 @@ def BCLCharCodeToByte(CharCodeVal):
 
 def usage():
 	print "Usage:"
-	print "	python bintoutf.py -e <input> <output> Encodes a file"
-	print "	python bintoutf.py -d <input> <output> Decodes a file"
+	print "\tpython %s -e <input> <output> Encodes a file" % sys.argv[0]
+	print "\tpython %s -d <input> <output> Decodes a file" % sys.argv[0]
+	exit()
 
 if len(sys.argv) <= 3:
 	usage()
-	exit()
 
 if sys.argv[1] == "-e":
 	ConvBinToUTF8(sys.argv[2],sys.argv[3])
@@ -137,4 +139,3 @@ elif sys.argv[1] == "-d":
 	ConvUTF8ToBin(sys.argv[2],sys.argv[3])
 else:
 	usage()
-	exit()
